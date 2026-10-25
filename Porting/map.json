@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "package": "swift-ai-lmnt",
+  "status": "coarse-import",
+  "upstream": [
+    {
+      "name": "@ai-sdk/lmnt",
+      "implementation": [
+        "packages/lmnt/src"
+      ],
+      "tests": []
+    }
+  ],
+  "swift": {
+    "sources": [
+      "Sources/SwiftAILMNT/LMNTAudioModels.swift",
+      "Sources/SwiftAILMNT/LMNTProvider.swift"
+    ],
+    "tests": [
+      "Tests/SwiftAILMNTTests/FixtureDownloadTransport.swift",
+      "Tests/SwiftAILMNTTests/LMNTProviderTests.swift",
+      "Tests/SwiftAILMNTTests/TestSupport.swift"
+    ],
+    "resources": []
+  },
+  "differences": [
+    {
+      "kind": "native-adaptation",
+      "reason": "Preserve Swift async/await, Sendable, Foundation transport and existing documented gaps; see Docs/CoreV6Parity.md and PortingStatus.md."
+    }
+  ],
+  "reviewNote": "M6: LMNT runtime and focused upstream-derived tests own their package; HTTP construction is shared, options and wire policy remain local. Prior baselines and known gaps are retained.",
+  "canonicalOnlyReferences": [],
+  "canonicalDirectory": "Packages/swift-ai-lmnt"
+}

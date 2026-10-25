@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "package": "swift-ai-lmnt",
+  "version": "1.0.0",
+  "releaseID": "modular-3",
+  "source": {
+    "commit": "7fc9b4cd72f8f83b75ba7eee2e38d37127539317",
+    "baseCommit": "7fc9b4cd72f8f83b75ba7eee2e38d37127539317",
+    "workingTree": false,
+    "inputsSHA256": "49b802ba4a30454f78c9886ab3114537ef659ab3e6db7775479b7351f6e3f0ab"
+  },
+  "dependencies": [
+    {
+      "package": "swift-ai-core",
+      "from": "1.1.0"
+    }
+  ],
+  "changes": [
+    {
+      "id": "remaining-package-extraction",
+      "notes": "Extract the existing runtime, typed settings and standalone tests from the compatibility aggregate. Preserve the reviewed npm baseline and existing capability/gap boundaries.",
+      "compatibility": "Initial independent Swift package version. Existing SwiftAISDK entry points remain in the development compatibility facade; no npm-version equivalence is implied."
+    }
+  ],
+  "canonicalDirectory": "Packages/swift-ai-lmnt",
+  "upstream": [
+    {
+      "name": "@ai-sdk/lmnt",
+      "reviewedVersion": "3.0.36",
+      "ledgerKind": "provider",
+      "evidence": "`AIProviders.lmnt`, `LMNTSpeechModel`, `LMNTProviderTests.swift`",
+      "reviewStatus": "imported-reviewed-with-gaps",
+      "archiveIntegrity": null,
+      "sourceRef": "npm:@ai-sdk/lmnt@3.0.36",
+      "testRef": "682e2dd71456f14f9da33a1b983d1998c3a1184c",
+      "testRefRelationship": "inventory-snapshot-not-release-verified",
+      "contractFamilies": [],
+      "contractReview": "not-imported; inspect upstream declarations before extraction"
+    }
+  ],
+  "note": "Independent port. Imported test refs and contract review gaps retain their original status; export is not new upstream parity proof.",
+  "canonicalInputs": [
+    {
+      "canonicalPath": ".github/workflows/package-check.yml",
+      "sha256": "7ff448e130f7aed96c38accdf828b6d993997ebc5317358347e9a70a649e67ca"
+    },
+    {
+      "canonicalPath": "LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "canonicalPath": "Packages/swift-ai-lmnt/Package.swift",
+      "sha256": "e24e8144e7d7d438c35291f698162412fb91b550dd7109c465888e89fb084d5f"
+    },
+    {
+      "canonicalPath": "Packages/swift-ai-lmnt/Porting/map.json",
+      "sha256": "530850a9221175fcfbe1fd8c9adf2d7d874e8fcf0c63cc4c5d725e91cbaf5b1e"
+    },
+    {
+      "canonicalPath": "Packages/swift-ai-lmnt/README.md",
+      "sha256": "2f1b516aaacc29f3a0e2d78e824e1cfc543736b0fe683e31b3d72fbab6e81097"
+    },
+    {
+      "canonicalPath": "Packages/swift-ai-lmnt/Sources/SwiftAILMNT/LMNTAudioModels.swift",
+      "sha256": "e6ee81253920faa64d9a9707333aeb3e7dd0cd8bb265cceff66631fcd41dce25"
+    },
+    {
+      "canonicalPath": "Packages/swift-ai-lmnt/Sources/SwiftAILMNT/LMNTProvider.swift",
+      "sha256": "27d7e7c6adba484cb98b0be6285bf7cad25ebe832700906517fbffa9075b51f6"
+    },
+    {
+      "canonicalPath": "Packages/swift-ai-lmnt/Tests/SwiftAILMNTTests/FixtureDownloadTransport.swift",
+      "sha256": "3d8560cdf0d52b6f16a9fedecd967665109ddab578d7f59ce0208d2c843c0148"
+    },
+    {
+      "canonicalPath": "Packages/swift-ai-lmnt/Tests/SwiftAILMNTTests/LMNTProviderTests.swift",
+      "sha256": "d853688b5db2fa7713948b7635f26a81020443de54e2224d5dbcf18e53492727"
+    },
+    {
+      "canonicalPath": "Packages/swift-ai-lmnt/Tests/SwiftAILMNTTests/TestSupport.swift",
+      "sha256": "d714ec589f0a0f02b34cf1719d692d183adc80599aefacaa24da2f0e99e206ff"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+[
+  {
+    "order": 34,
+    "providerID": "lmnt",
+    "upstreamPackage": "@ai-sdk/lmnt",
+    "factoryNames": [
+      "AIProviders.lmnt"
+    ],
+    "capabilities": [
+      "speech"
+    ],
+    "files": false,
+    "skills": false,
+    "notes": "LMNT speech mirrors upstream 3.0.36: `LMNT_API_KEY`, `x-api-key` auth, custom headers, versioned user-agent suffix, `speech`/`speechModel` aliases, default voice `ava`, `/v1/ai/speech/bytes`, binary audio responses, output format warnings/fallback, `providerOptions.lmnt` speech schema defaults, response metadata, and unsupported language/embedding/image families."
+  }
+]
