@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
   "package": "swift-ai-lmnt",
-  "version": "1.0.0",
-  "releaseID": "modular-3",
+  "version": "1.1.0",
+  "releaseID": "upstream-parity-20261116",
   "source": {
-    "commit": "7fc9b4cd72f8f83b75ba7eee2e38d37127539317",
-    "baseCommit": "7fc9b4cd72f8f83b75ba7eee2e38d37127539317",
+    "commit": "1c457dea36be42376a6853aecd5c48ffc4942178",
+    "baseCommit": "1c457dea36be42376a6853aecd5c48ffc4942178",
     "workingTree": false,
-    "inputsSHA256": "49b802ba4a30454f78c9886ab3114537ef659ab3e6db7775479b7351f6e3f0ab"
+    "inputsSHA256": "d7b8f52add7828d7e9ed20418fe072e7db03e75483a168bb7f5c34e9d2a04a13"
   },
   "dependencies": [
     {
@@ -17,9 +17,9 @@
   ],
   "changes": [
     {
-      "id": "remaining-package-extraction",
-      "notes": "Extract the existing runtime, typed settings and standalone tests from the compatibility aggregate. Preserve the reviewed npm baseline and existing capability/gap boundaries.",
-      "compatibility": "Initial independent Swift package version. Existing SwiftAISDK entry points remain in the development compatibility facade; no npm-version equivalence is implied."
+      "id": "upstream-parity-20261116",
+      "notes": "Empty language is omitted, an empty format no longer warns and a settings `X-Api-Key` header overrides the key.",
+      "compatibility": "Source-compatible; changes are additive. Request bodies, results, warnings and errors change to match the reviewed upstream package."
     }
   ],
   "canonicalDirectory": "Packages/swift-ai-lmnt",
@@ -54,19 +54,19 @@
     },
     {
       "canonicalPath": "Packages/swift-ai-lmnt/Porting/map.json",
-      "sha256": "530850a9221175fcfbe1fd8c9adf2d7d874e8fcf0c63cc4c5d725e91cbaf5b1e"
+      "sha256": "c46e8793c3254b117e546376ce6f336546ef4c2cc8778fd2bad1f24b4e165458"
     },
     {
       "canonicalPath": "Packages/swift-ai-lmnt/README.md",
-      "sha256": "2f1b516aaacc29f3a0e2d78e824e1cfc543736b0fe683e31b3d72fbab6e81097"
+      "sha256": "a1d5956766f52a41b2cd0858c329216482a84d6da74bcb48a305a33244e0e396"
     },
     {
       "canonicalPath": "Packages/swift-ai-lmnt/Sources/SwiftAILMNT/LMNTAudioModels.swift",
-      "sha256": "e6ee81253920faa64d9a9707333aeb3e7dd0cd8bb265cceff66631fcd41dce25"
+      "sha256": "243968a9a609f119c187861f1fb26da6cc5dd198444429245871d54899d18814"
     },
     {
       "canonicalPath": "Packages/swift-ai-lmnt/Sources/SwiftAILMNT/LMNTProvider.swift",
-      "sha256": "27d7e7c6adba484cb98b0be6285bf7cad25ebe832700906517fbffa9075b51f6"
+      "sha256": "01e0c38f281450908e4627c60ec50aab87adf7a618cec2ff582d283b3d7a8836"
     },
     {
       "canonicalPath": "Packages/swift-ai-lmnt/Tests/SwiftAILMNTTests/FixtureDownloadTransport.swift",
@@ -75,6 +75,10 @@
     {
       "canonicalPath": "Packages/swift-ai-lmnt/Tests/SwiftAILMNTTests/LMNTProviderTests.swift",
       "sha256": "d853688b5db2fa7713948b7635f26a81020443de54e2224d5dbcf18e53492727"
+    },
+    {
+      "canonicalPath": "Packages/swift-ai-lmnt/Tests/SwiftAILMNTTests/LMNTSourceParityTests.swift",
+      "sha256": "1fb06e1bd6a12c6d0441bff5b85d48a7ee8ecac77e1624b667f6a6642e178075"
     },
     {
       "canonicalPath": "Packages/swift-ai-lmnt/Tests/SwiftAILMNTTests/TestSupport.swift",

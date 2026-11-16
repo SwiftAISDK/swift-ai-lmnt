@@ -19,6 +19,7 @@
     "tests": [
       "Tests/SwiftAILMNTTests/FixtureDownloadTransport.swift",
       "Tests/SwiftAILMNTTests/LMNTProviderTests.swift",
+      "Tests/SwiftAILMNTTests/LMNTSourceParityTests.swift",
       "Tests/SwiftAILMNTTests/TestSupport.swift"
     ],
     "resources": []

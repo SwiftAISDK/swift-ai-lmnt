@@ -1,6 +1,6 @@
 # Changelog
 
-## 1.0.0
+## 1.1.0
 
-- Extract the existing runtime, typed settings and standalone tests from the compatibility aggregate. Preserve the reviewed npm baseline and existing capability/gap boundaries.
-  Compatibility: Initial independent Swift package version. Existing SwiftAISDK entry points remain in the development compatibility facade; no npm-version equivalence is implied.
+- Empty language is omitted, an empty format no longer warns and a settings `X-Api-Key` header overrides the key.
+  Compatibility: Source-compatible; changes are additive. Request bodies, results, warnings and errors change to match the reviewed upstream package.
